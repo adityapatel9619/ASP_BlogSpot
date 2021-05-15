@@ -17,5 +17,10 @@ namespace ASP_BlogSpot.Controllers
         {
             return View();
         }
+
+        public IActionResult Experiences()
+        {
+            return View();
+        }
     }
 }

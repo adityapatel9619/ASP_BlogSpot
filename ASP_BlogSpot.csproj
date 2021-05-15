@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\BlogSpot\images\Blog\" />
+    <Folder Include="wwwroot\BlogSpot\images\Experiences\" />
     <Folder Include="wwwroot\BlogSpot\images\WhatsTrending\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
