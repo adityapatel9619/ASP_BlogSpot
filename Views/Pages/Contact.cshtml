@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Extrnal CSS -->
-    <link rel="stylesheet" href="~/BlogSpot/css/Experiences/style.css">
+    <link rel="stylesheet" href="~/BlogSpot/css/Contact/style.css">
 
     <title>ASP BlogCorner</title>
     <link rel="icon" type="image/png" href="~/Images/logo1.png" />
 </head>
 <body>
 
-    <button id="myBtn" title="Top">Top</button>
+    <!-- <button id="myBtn" title="Top">Top</button> -->
 
     <div class="page">
         <div id="logo" class="mt-5 float-left">
-            <img src="~/BlogSpot/images/Experiences/logo2.png" alt="ASP" id="logo1">
+            <img src="~/BlogSpot/images/Contact/logo2.png" alt="ASP" id="logo1">
             <p class="site-title mt-2 h3 font-weight-bold">
                 <a href="../index.html" id="title-logo" target="_blank">ASP BlogCorner</a>
             </p>
@@ -47,56 +47,36 @@
 
     <div class="blog-content">
         <div class="blog-header">
-            <h2 class="text-center font-weight-bold">Experiences</h2>
+            <h2 class="text-center font-weight-bold">Contact Us</h2>
             <hr id="mid">
         </div>
-        <div class="whtr-blog-body">
-
-            <!-- Experiences Blog 1 -->
-            <div class="exp-blog-one">
-                <a href="#"><h3 class="font-weight-bold" style="margin-left: 25%; margin-top: 1%;">All You Need is a Passport</h3></a>
-                <img src="~/BlogSpot/images/Experiences/exp_blog_one.jpg" alt="Blog One Image" style="margin-left: 25%;width:800px;">
-                <blockquote class="blockquote">
-                    <p style="margin-left: 25%; margin-right: 25%;">I am sure you have understood from the title itself what this post is going to be about. We all dream during our growing up days about making an international trip with our friends. We usually make a top 10 places to visit list and start saving money and planning for it. Just like the</p>
-                </blockquote>
-                <a href="#"><p class="h5" style="margin-left: 25%;">Continue Reading...</p></a>
-                <p class="h5 font-weight-light" style="margin-left: 25%;"> by Aditya  <span style="margin-left: 3%;">6th February 2021</span></p>
+        <div class="whtr-contact-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="txtName" class="h5 font-weight-bold">Name</label>
+                            <input type="text" class="form-control" id="txtName" placeholder="Aditya Patel">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail" class="h5 font-weight-bold">Email address</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="adityapatel9833@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtMessage" class="h5 font-weight-bold">Message</label>
+                            <textarea class="form-control" id="txtMessage" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary ml-5">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h1 id="contact-header">Get In Touch</h1>
+                </div>
             </div>
-
-            <!-- Experiences Blog 2 -->
-            <div class="exp-blog-two">
-                <a href="#"><h3 class="font-weight-bold" style="margin-left: 25%; margin-top: 1%;">WFH Life – The New Normal</h3></a>
-                <img src="~/BlogSpot/images/Experiences/exp_blog_two.jpg" alt="Blog One Image" style="margin-left: 25%;width:800px;">
-                <blockquote class="blockquote">
-                    <p style="margin-left: 25%; margin-right: 25%;">If we go back a couple of months or may be a year, all of us really envied our colleagues who worked from the comfort of their homes. We, the unfortunate ones, envisioned ourselves working from home, expecting it would help us in maintaining a proper work-life balance. Now, lets come back to the current</p>
-                </blockquote>
-                <a href="#"><p class="h5" style="margin-left: 25%;">Continue Reading...</p></a>
-                <p class="h5 font-weight-light" style="margin-left: 25%;"> by Arnold  <span style="margin-left: 3%;">26th March 2021</span></p>
-            </div>
-
-
-
         </div>
     </div>
     <br>
-    <hr id="end">
 
-    <!-- Subscribe Section -->
-    <div class="subscribe-section">
-        <div class="subscribe-header">
-            <h2 class="text-center">Follow My Experiences Blog</h2>
-            <p class="text-center h5">Get new content delivered directly to your inbox.</p>
-        </div>
-        <div class="subscribe-form" style="margin-left: 25%; margin-right: 25%;">
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <button type="submit" class="btn btn-outline-danger" id="mybtn">Subscribe</button>
-            </form>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -117,7 +97,7 @@
 
 
     <!-- External JS -->
-    <script src="~/BlogSpot/js/Experiences/app.js"></script>
+    <script src="app.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
