@@ -3,6 +3,10 @@
 window.onscroll = function () {
     scrollFunction();
 }
+window.onload = function () {
+    document.getElementById("loading").style.display = 'block';
+    setTimeout(showData, 1000);
+ }
 
 function scrollFunction() {
 
@@ -18,3 +22,9 @@ document.getElementById('myBtn').addEventListener('click', function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+
+function showData() {
+    document.getElementById("loading").style.display = 'none';
+    document.getElementById("content-body").style.display = 'block';
+}

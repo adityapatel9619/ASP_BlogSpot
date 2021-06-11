@@ -4,6 +4,7 @@ window.onscroll = function () {
     scrollFunction();
 }
 
+
 function scrollFunction() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -18,3 +19,13 @@ document.getElementById('myBtn').addEventListener('click', function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+window.onload = function () {
+    document.getElementById("loading").style.display = 'block';
+    setTimeout(showData, 1000);
+}
+
+function showData() {
+    document.getElementById("loading").style.display = 'none';
+    document.getElementById("content-body").style.display = 'block';
+}
