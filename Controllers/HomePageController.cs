@@ -12,5 +12,10 @@ namespace ASP_BlogSpot.Controllers
         {
             return View();
         }
+
+        public IActionResult Indexnew()
+        {
+            return View();
+        }
     }
 }

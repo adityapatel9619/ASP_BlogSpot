@@ -27,5 +27,15 @@ namespace ASP_BlogSpot.Controllers
         {
             return View();
         }
+
+        public IActionResult AddBlog()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
