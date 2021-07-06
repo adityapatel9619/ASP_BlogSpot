@@ -37,5 +37,10 @@ namespace ASP_BlogSpot.Controllers
         {
             return View();
         }
+
+        public IActionResult AddNewBlog()
+        {
+            return View();
+        }
     }
 }
