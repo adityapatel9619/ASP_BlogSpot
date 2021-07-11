@@ -42,5 +42,10 @@ namespace ASP_BlogSpot.Controllers
         {
             return View();
         }
+
+        public IActionResult UserRegistration()
+        {
+            return View();
+        }
     }
 }
