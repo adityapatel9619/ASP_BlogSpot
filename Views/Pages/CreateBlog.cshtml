@@ -1,0 +1,99 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Include Quill stylesheet -->
+    <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+
+    <!-- Extrnal CSS -->
+    <link rel="stylesheet" href="~/BlogSpot/css/CreateBlog/style.css">
+
+    <title>Create Blog</title>
+    <link rel="icon" type="image/png" href="~/Images/logo1.png" />
+</head>
+<body>
+    <!-- LOADER HERE  -->
+    <div id="loading">
+        <img src="~/Images/calculating2.gif" alt="Calculating">
+    </div>
+
+    <button id="myBtn" title="Top">Top</button>
+    <div id="content-body" style="display:none">
+        <div class="page">
+            <div id="logo" class="mt-5 float-left">
+                <img src="~/BlogSpot/images/WhatsTrending/logo2.png" alt="ASP" id="logo1">
+                <p class="site-title mt-2 h3 font-weight-bold">
+                    <a href="../index.html" id="title-logo" target="_blank">ASP BlogCorner</a>
+                </p>
+                <p class="site-description font-weight-light h5 text-uppercase">Write Your Hear Out!!</p>
+            </div>
+            <div class="float-left mr-auto" id="listNav">
+                <ul class="list-inline">
+                    <li class="list-inline-item font-weight-bold h5"><a href="/HomePage/Index">Home</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Blog">Blog</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/WhatsTrending">What's Trending !!</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Experiences">Experiences</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <hr id="start">
+        <div class="blog-content">
+            <div class="blog-header">
+                <h2 class="text-center font-weight-bold">Create New Blog</h2>
+                <hr id="mid">
+            </div>
+            <div class="register-body">
+                <div id="editor-container">
+                </div>
+                <div class="mt-3 text-center">
+                    <button type="button" class="btn btn-success" id="btnSubmit">Submit</button>
+                    <button type="button" class="btn btn-danger ml-2" id="btnClear">Clear</button>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer>
+            <div class="page-name">
+                <p class="font-weight-light h4 ml-5 float-left">ASP BlogCorner</p>
+                <ul class="list-inline float-right ml-3">
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Home</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Blog</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">What's Trending !!</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Experiences</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">About The BlogCorner</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+
+    <!-- External JS -->
+    <script src="~/BlogSpot/js//CreateBlog/app.js"></script>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
