@@ -16,6 +16,9 @@
     <!-- Extrnal CSS -->
     <link rel="stylesheet" href="~/BlogSpot/css/Contact/style.css">
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <title>ASP BlogCorner</title>
     <link rel="icon" type="image/png" href="~/Images/logo1.png" />
 </head>
@@ -72,6 +75,7 @@
     <br>
     <hr id="start">
 
+    <!-- Contact Us -->
     <div class="blog-content">
         <div class="blog-header">
             <h2 class="text-center font-weight-bold">Contact Us</h2>
@@ -83,17 +87,17 @@
                     <form id="contact-form">
                         <div class="form-group">
                             <label for="txtName" class="h5 font-weight-bold">Name</label>
-                            <input type="text" class="form-control" id="txtName" placeholder="Aditya Patel">
+                            <input type="text" class="form-control" id="txtName">
                         </div>
                         <div class="form-group">
                             <label for="txtEmail" class="h5 font-weight-bold">Email address</label>
-                            <input type="email" class="form-control" id="txtEmail" placeholder="adityapatel9833@gmail.com">
+                            <input type="email" class="form-control" id="txtEmail">
                         </div>
                         <div class="form-group">
                             <label for="txtMessage" class="h5 font-weight-bold">Message</label>
                             <textarea class="form-control" id="txtMessage" rows="3"></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary ml-5">Submit</button>
+                        <button type="button" class="btn btn-primary ml-5" id="mynewBtn">Submit</button>
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -124,7 +128,10 @@
 
 
     <!-- External JS -->
-    <script src="app.js"></script>
+   @*<script src="app.js"></script>*@
+
+    <script src="~/BlogSpot/js/Contact/app.js"></script>
+    
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
