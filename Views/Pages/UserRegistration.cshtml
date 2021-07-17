@@ -21,12 +21,12 @@
 </head>
 <body>
     <!-- LOADER HERE  -->
-    <div id="loading">
+    @*<div id="loading">
         <img src="~/Images/calculating2.gif" alt="Calculating">
-    </div>
+    </div>*@
 
     <button id="myBtn" title="Top">Top</button>
-    <div id="content-body" style="display:none">
+    <div id="content-body">
         <div class="page">
             <div id="logo" class="mt-5 float-left">
                 <img src="~/BlogSpot/images/WhatsTrending/logo2.png" alt="ASP" id="logo1">
@@ -46,33 +46,7 @@
                 </ul>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="txtId">User Id</label>
-                                <input type="email" class="form-control" id="txtId" aria-describedby="emailHelp" placeholder="Enter UserId">
-                            </div>
-                            <div class="form-group">
-                                <label for="txtPwd">Password</label>
-                                <input type="password" class="form-control" id="txtPwd" placeholder="Password">
-                            </div>
-                            <a href="/Admin/Index" class="float-left"><p>Forgot Password</p></a>
-                            <a href="/Register/Index" target="_blank" class="float-right">New User(Click here)</a>
-                            <br />
-                            <br />
-                            <div class="text-center">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <br>
         <hr id="start">
         <div class="blog-content">
@@ -88,19 +62,19 @@
                             <!-- First Name -->
                             <div class="col-md-4">
                                 <label for="txtFName" class="font-weight-bold">First Name</label>
-                                <input type="text" class="form-control is-invalid" id="txtFName">
+                                <input type="text" class="form-control" id="txtFName">
                             </div>
                             
                             <!-- Middle Name -->
                             <div class="col-md-4">
                                 <label for="txtMName" class="font-weight-bold">Middle Name</label>
-                                <input type="text" class="form-control is-valid" id="txtMName">
+                                <input type="text" class="form-control" id="txtMName">
                             </div>
                             
                             <!-- Last Name -->
                             <div class="col-md-4">
                                 <label for="txtLName" class="font-weight-bold">Last Name</label>
-                                <input type="text" class="form-control is-invalid" id="txtLName">
+                                <input type="text" class="form-control" id="txtLName">
                             </div>
                         </div>
 
@@ -109,25 +83,25 @@
                             <!-- Add Blogging Name -->
                             <div class="col-md-3">
                                 <label for="txtLName" class="font-weight-bold">Enter Public Blogging Name</label>
-                                <input type="text" class="form-control is-valid" id="txtPBName">
+                                <input type="text" class="form-control" id="txtPBName">
                             </div>
 
                             <!-- Phone Number -->
                             <div class="col-md-3">
                                 <label for="txtTel" class="font-weight-bold">Enter Phone Number</label>
-                                <input type="tel" class="form-control is-invalid" id="txtTel" />
+                                <input type="tel" class="form-control" id="txtTel" />
                             </div>
 
                             <!-- Age -->
                             <div class="col-md-3">
                                 <label for="txtAge" class="font-weight-bold">Enter Age</label>
-                                <input type="text" class="form-control is-invalid" id="txtAge">
+                                <input type="text" class="form-control" id="txtAge">
                             </div>
 
                             <!-- DoB -->
                             <div class="col-md-3">
                                 <label for="lblDob" class="font-weight-bold">Enter Date Of Birth</label>
-                                <input class="form-control is-valid" type="date" id="txtDob">
+                                <input class="form-control" type="date" id="txtDob">
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -135,19 +109,19 @@
                             <!-- User Name -->
                             <div class="col-md-4">
                                 <label for="txtUSRName" class="font-weight-bold">Enter Username</label>
-                                <input type="text" class="form-control is-valid" id="txtUSRName">
+                                <input type="text" class="form-control" id="txtUSRName">
                             </div>
 
                             <!-- Password Name -->
                             <div class="col-md-4">
                                 <label for="txtPwd" class="font-weight-bold">Enter Password</label>
-                                <input type="password" class="form-control is-valid" id="txtPwd">
+                                <input type="password" class="form-control" id="txtPwd">
                             </div>
 
                             <!-- Confirm Name -->
                             <div class="col-md-4">
                                 <label for="txtCnfPwd" class="font-weight-bold">Confirm Password</label>
-                                <input type="password" class="form-control is-invalid" id="txtCnfPwd">
+                                <input type="password" class="form-control" id="txtCnfPwd">
                             </div>
                         </div>
                         <div class="row mt-4">
