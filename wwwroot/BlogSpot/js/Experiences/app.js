@@ -50,14 +50,25 @@ document.getElementById('lgBtn').addEventListener('click', function () {
         document.getElementById('txtPwd').classList.remove('is-invalid');
         reDirect();
     }
+    else if (username == "admin" && password == "admin") {
+        document.getElementById('txtId').classList.remove('is-invalid');
+        document.getElementById('txtPwd').classList.remove('is-invalid');
+        reDirectAdmin(username, password);
+    }
     else {
         alert("Login Falied");
         document.getElementById('txtId').value = "";
         document.getElementById('txtPwd').value = "";
     }
 
+
+
 })
 
 function reDirect() {
     window.location.href = '/Pages/CreateBlog';
+}
+var u, p
+function reDirectAdmin(u, p) {
+    window.location.href = '/Admin/Index';
 }
