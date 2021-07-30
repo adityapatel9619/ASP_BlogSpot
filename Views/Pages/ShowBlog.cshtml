@@ -1,0 +1,153 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Extrnal CSS -->
+    <link rel="stylesheet" href="~/BlogSpot/css/ShowBlog/style.css">
+
+    <title>ASP BlogCorner</title>
+    <link rel="icon" type="image/png" href="~/Images/logo1.png" />
+</head>
+<body>
+    <!-- LOADER HERE  -->
+    <div id="loading">
+        <img src="~/Images/calculating2.gif" alt="Calculating">
+    </div>
+
+    <button id="myBtn" title="Top">Top</button>
+    <div id="content-body" style="display:none">
+        <div class="page">
+            <div id="logo" class="mt-5 float-left">
+                <img src="~/BlogSpot/images/Blog/logo2.png" alt="ASP" id="logo1">
+                <p class="site-title mt-2 h3 font-weight-bold">
+                    <a href="https://getbootstrap.com/docs/4.0/utilities/text/" id="title-logo" target="_blank">ASP BlogCorner</a>
+                </p>
+                <p class="site-description font-weight-light h5 text-uppercase">Write Your Hear Out!!</p>
+            </div>
+            <div class="float-left mr-auto" id="listNav">
+                <ul class="list-inline">
+                    <li class="list-inline-item font-weight-bold h5"><a href="/HomePage/Index">Home</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Blog">Blog</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/WhatsTrending">What's Trending !!</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Experiences">Experiences</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Contact">Contact</a></li>
+                    <li class="list-inline-item font-weight-bold h5" data-toggle="modal" data-target="#exampleModal" id="myLogin"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="txtId">User Id</label>
+                                <input type="email" class="form-control" id="txtId" aria-describedby="emailHelp" placeholder="Enter UserId">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtPwd">Password</label>
+                                <input type="password" class="form-control" id="txtPwd" placeholder="Password">
+                            </div>
+                            <a href="#" class="float-left"><p>Forgot Password</p></a>
+                            <a href="/Pages/UserRegistration" target="_blank" class="float-right">New User(Click here)</a>
+                            <br />
+                            <br />
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="lgBtn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr id="start">
+
+        <div class="blog-content">
+            <div class="blog-header">
+                <h2 class="text-center font-weight-bold">A Series to Remember..</h2>
+                <hr id="mid">
+            </div>
+            <div class="blog-body">
+
+                <!-- Blog 1 -->
+                <div class="blog-one">
+                    <img src="~/BlogSpot/images/Blog/blog_one.jpg" alt="Blog One Image" style="margin-left: 35%;">
+                    <blockquote class="blockquote">
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">It was the Australian summer of 2018-19 when a full-strength Indian team visited Down Under and won their first ever Test series in Australia by completely outplaying their opponents in every facet of the game. Virat Kohli-led team became the first Asian team to win a Test series in Australia and as expected, the entire country rejoiced this magnificent achievement and rightfully compared it to the World Cup wins in 1983 and 2011. Despite the achievement being huge, it was downplayed since two of the biggest Australian names, Steve Smith & David Warner, were not part of the squad due to their suspension in the Sandpaper scandal that shocked the entire cricketing world. Hence, when the fixture of India touring Australia in 2020 was made, the entire cricketing world took notice and jumped quickly to opine that this will be Virat Kohli’s toughest challenge in his captaincy career since Australia was in its full-strength and a much improved Test team</p>
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">Once the IPL 2020 ended, the focus quickly shifted towards the Border-Gavaskar Trophy. Every cricket expert or lover realized that beating Australia in their home turf this time will be too difficult, but we knew the series will be exciting. Everyone lost hope when it was announced that Virat Kohli will come back to India after the 1st Test in Adelaide to accompany his wife on the birth of their first child. Losing your captain and undoubtedly the best batsman in the team was a huge void to fill. Not only the skills of Virat, but the never-give-up attitude of Virat would also be hugely missed. Once this news came, we started focusing on the Limited Overs series and expected us to win ODI/T20 ones to compensate for the Test series. Let’s be honest, we all didn’t give India a chance. India lost the ODI series but won the T20 tournament. Now, the time finally came for the Test series, which is the ultimate series to be fought.</p>
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">In spite of the Adelaide loss and the worldwide criticism, Team India was not ready to succumb. The leadership of the team was handed to Ajinkya Rahane and he led from the front in the 2nd test match in Melbourne by scoring a magnificent century at the MCG. In the opinion of many, that hundred from the captain might have changed the atmosphere in the entire dressing room since India turned out to be triumphant in Melbourne as they defeated Australia by 8 wickets to level the series 1-1. The match will be remembered not only for Rahane’s century and Jadeja’s all-round brilliance, but also for the arrival of two promising debutants – Shubhman Gill and Mohd. Siraj. While it was a matter of when for Shubman as he had scored huge runs in the domestic circuit for long, the turnaround for Mohd. Siraj was extremely special. He lost his father whilst in this tour but chose to stay with the team since his father dreamt of watching his son played in a Test match for India. Mohd. Siraj performed brilliantly in the test match and did not let us miss Shami. What made the MCG win unique is the fact that India fielded a severly depleted side and were also able to bury the ghost of 36 all out. This, many experts said, would be counted as one of the best comebacks by a cricketing team.</p>
+                    </blockquote>
+
+                    <img src="~/BlogSpot/images/ShowBlog/Image2.jpg" alt="Blog One Image" id="image2">
+                    <blockquote class="blockquote">
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">It was the Australian summer of 2018-19 when a full-strength Indian team visited Down Under and won their first ever Test series in Australia by completely outplaying their opponents in every facet of the game. Virat Kohli-led team became the first Asian team to win a Test series in Australia and as expected, the entire country rejoiced this magnificent achievement and rightfully compared it to the World Cup wins in 1983 and 2011. Despite the achievement being huge, it was downplayed since two of the biggest Australian names, Steve Smith & David Warner, were not part of the squad due to their suspension in the Sandpaper scandal that shocked the entire cricketing world. Hence, when the fixture of India touring Australia in 2020 was made, the entire cricketing world took notice and jumped quickly to opine that this will be Virat Kohli’s toughest challenge in his captaincy career since Australia was in its full-strength and a much improved Test team</p>
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">India began Day 5 with 309 left to win, but most importantly 90 overs to play for a draw. Our hope crushed when Rahane was dismissed early. But then came Rishabh Pant. Together Pant and Pujara put on a 148-run partnership to put Australia in the backfoot. Rishabh Pant not only came with a bruised elbow to bat but took the attack to the Australians. At one point of time, the Australian team had their hearts in their mouth and were fearing a loss. But Pant fell just 3 runs short of what would have been one of the greatest Test innings in the Australian soil. Once Pant fell and then Pujara followed, India realized it is time to play for a draw. All hopes were on Hanuma Vihari and Ravichandran Ashwin to save India. While Vihari tore his hamstring in the beginning of his innings, he didn’t give and continued fighting for his country like a warrior. On the other hand, Ashwin took multiple blows to his body and sledges from the Australian team but didn’t succumb and kept on defending and playing out the overs. What stood out for me was the fact that Jadeja was padded up to come to bat in spite of a finger dislocation. This showed that we were not backing down and ready to fight. And Vihari and Ashwin bravely fought the rest of the overs to secure a historic draw at the SCG. This draw was more special to the team and the country than the MCG win since the team was battered and bruised but continued to fight. Pant, Vihari and Ashwin took multiple doses of painkillers and kept batting. I am sure listening to such dedication brought tears to many Indian year. Apart from this, our bowlers Siraj and Bumrah were also subjected to racist slurs from the Sydney crowd. Battered, Bruised and Abused, but the team gave it back in the field where it mattered. At this point of time, every Indian and cricketing lover across the world was proud of the team in spite of what happens in the next match. The team defied all odds and fought back in the match also the series.</p>
+                    </blockquote>
+                    <img src="~/BlogSpot/images/ShowBlog/Image3.jpg" alt="Blog One Image" id="image2">
+                    <blockquote class="blockquote">
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">All the predictions of India being defeated 4-0 came to the ground as Team India scripted a fairytale comeback to win the Test series in Australia for a second consecutive time. This win is not only just a test series win for India. It is, in my opinion, is the greatest achievement by the Indian cricket team. Be it the 2001 Kolkata Test Match and the series or winning the test series in England or even the World Cup 2011, this win will be part of cricketing folklore for generations to come. This series showed us why the new India is not afraid or bothered with setbacks and knows how to give back. Let me give few examples about the heroic activities we witnessed from this team.</p>
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">The team suffered a humiliating loss in Adelaide with the entire batting collapsing at 36 all out, but they came back like champions and won the Melbourne test match as if Adelaide never happened. The team lost its biggest player in Kohli, but Rahane took over the reigns and held the team and led perfectly. The team took multiple blows in their bodies, braved through all the injuries and drew the Sydney test match. The team faced racial abuses from the crowd but gave back only in the field where it matters. The team lost 80% of its team members due to injury but every time a new name stepped up and delivered for the country. Be it the seniors or the debutants, everyone stood up to the challenge and achieved what was unthinkable. Some even lost their family member but decided to stay with the team and help win the series. If this is not a fairytale, I wonder what is. The team answered all the 4-0 predictions, the sledges and the abuses on the field and held the Indian flag high.</p>
+                    </blockquote>
+                    <img src="~/BlogSpot/images/ShowBlog/Image4.jpg" alt="Blog One Image" id="image2">
+                    <blockquote class="blockquote">
+                        <p style="margin-left: 25%; margin-right: 25%; margin-top:2%;">What a wonderful series it was !! The entire cricketing world stood up and applauded both the teams for the incredible spirit with which they played the game. Applause was mostly reserved for Team India for giving every country a lesson to never underestimate the Indians, as beautifully stated by the Australian coach Justin Langer. This win will certainly change Indian cricket for the better. Be it Shubhman Gill or Mohd. Siraj or Washington Sundar or Shardul Thakur, we have few legends in the making. Apart from the team, the entire support staff also deserves credit for holding the team, especially a certain Ravi Shastri who has been subjected to numerous trolls, sarcasm and criticism in the past few years. The fighting spirit of Ravi can be seen in this team. Huge credit also to Virat Kohli for building this team. This is Kohli’s team afterall and as Ravi Shastri rightly stated, this team was not built this series, it was built in the last 5-6 years. The never-give-up attitude of Virat Kohli can be seen in this team. And can ever keep a certain Rahul Dravid out of Indian cricket? Most of the youngsters who played in this series were groomed by the legend himself. Probably a huge thank you to The Wall for building such a strong bench strength. We can now be certain about the fact that Indian cricket is in safe hands.</p>
+                    </blockquote>
+                </div>
+                <hr id="end">
+                <h2 class="text-center font-weight-bold">One thought on “A Series to Remember..”</h2>
+                <br />
+                <h3 class="font-weight-bold" id="lar">Leave a Reply</h3>
+                <br />
+                <textarea class="comment" placeholder="Type your comment here."></textarea>
+                <br />
+                <button type="submit" class="btn btn-primary" id="cmt">Comment</button>
+            </div>
+        </div>
+        <br>
+        
+
+       
+
+        <!-- Footer -->
+        <footer>
+            <div class="page-name">
+                <p class="font-weight-light h4 ml-5 float-left">ASP BlogCorner</p>
+                <ul class="list-inline float-right ml-3">
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Home</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Blog</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">What's Trending !!</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Experiences</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">About The BlogCorner</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- External JS -->
+    <script src="~/BlogSpot/js/Blog/app.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</body>
+</html>
